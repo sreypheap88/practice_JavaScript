@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="add-product">
+        <button onclick=" onAddButton()">Create User</button>
+    </div>
+    <table id="table-container">
+        <thead>
+            <tr id="title-th">
+            <th id="text1">First Name</th>
+            <th id="text2">Last Name</th>
+            <th id="text3">Email</th>
+            <th id="text4">Action</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+          <!-- dispaly table -->
+        </tbody>
+    </table>
+    <div id="questions-dialog" style="display: none">
+        <dialog open>
+            <header id="edit-header">Create new Product</header>
+            <section>
+                <label>First Name</label>
+                <input id="input_first" type="text" placeholder="first name" />
+                <label>Last Name</label>
+                <input id="input_last" type="text" placeholder="last name" />
+                <label>Email</label>
+                <input id="input_email" type="text" placeholder="email" />
+            </section>
+            <menu>
+                <!-- When clicking on button,  call the right function  -->
+                <button onclick="onCancel(event)" id="cancal-product">Cancel</button>
+    
+                <!-- When clicking on button,  call the right function  -->
+                <button onclick="createUser(event)" id="create-product">Create</button>
+                <!-- <button id="edit-product">Edit</button> -->
+          </menu>
+        </dialog>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
